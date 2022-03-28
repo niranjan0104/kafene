@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kafene</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/user.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="nav">
+        <div id="log-wrapper">
+          <img
+            id="logo-img"
+            src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+            alt="stylist k"
+          />
+          <p id="logo-text">Kafene</p>
+        </div>
+        <a class="nav-link" href="order.html">Orders</a>
+        <a class="nav-link" href="product.html">Products</a>
+        <a class="nav-link active" href="user.html">Users</a>
+        <a class="nav-link" id="logout-btn" href="index.html">Log Out</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="order-section">
+        <h1>Users</h1>
+        <div id="search-order-wrapper">
+          <form action="#" id="form-search">
+            <input id="input-search" type="search" placeholder="Search by Name">
+            <input id="search-btn" type="submit" value="Search">
+            <input id="reset-btn" type="reset" value="Reset">
+          </form>
+
+            <table id="table">
+              <tr class="table-heading-row">
+                <th class="table-heading">ID</th>
+                <th class="table-heading">User Avtar</th>
+                <th class="table-heading">Full Name</th>
+                <th class="table-heading">DoB</th>
+                <th class="table-heading">Gender</th>
+                <th class="table-heading">Current Location</th>
+              </tr>
+
+              <tbody id="table-body">
+                 
+              </tbody>
+
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/index.js"></script>
+    <script src="js/user.js"></script>
+  </body>
+</html>
